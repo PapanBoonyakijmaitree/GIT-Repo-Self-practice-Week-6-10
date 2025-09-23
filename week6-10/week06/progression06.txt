@@ -1,0 +1,2 @@
+โจทย์ในไฟล์ week06.js ได้มาจาก AI
+ได้ฝึกใช้ higher-order function, closure และ callback เพื่อทำ formatter แบบใหม่, สร้าง calculator เพิ่มเติม, ทำ counter ที่ reset ได้, สร้าง id generator พร้อม prefix และฟังก์ชันซ้อนที่ใช้ multiply.
