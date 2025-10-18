@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="th">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Theme Settings (localStorage)</title>
+    <style>
+        body {
+        background-color: white;
+        color: black;
+        font-size: 18px;
+        font-family: sans-serif;
+        transition: all 0.3s ease;
+        }
+
+        .container {
+        max-width: 600px;
+        margin: 40px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        background: #f8f8f8;
+        }
+
+        label {
+        display: block;
+        margin-top: 10px;
+        font-weight: bold;
+        }
+
+        select, input[type="color"] {
+        margin-top: 5px;
+        padding: 6px;
+        }
+
+        button {
+        margin-top: 15px;
+        padding: 8px 16px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        }
+
+        #saveBtn {
+        background-color: #2563eb;
+        color: white;
+        }
+
+        #resetBtn {
+        background-color: #ef4444;
+        color: white;
+        }
+
+        .preview {
+        margin-top: 20px;
+        padding: 10px;
+        border: 1px dashed #aaa;
+        border-radius: 8px;
+        }
+    </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>ตั้งค่าการแสดงผลหน้าเว็บ</h1>
+
+            <form id="themeForm">
+            <label for="bgColor">Background Color:</label>
+            <input type="color" id="bgColor" value="#ffffff">
+
+            <label for="fontColor">Font Color:</label>
+            <input type="color" id="fontColor" value="#000000">
+
+            <label for="fontSize">Font Size:</label>
+            <select id="fontSize">
+                <option value="small">Small (14px)</option>
+                <option value="medium" selected>Medium (18px)</option>
+                <option value="large">Large (24px)</option>
+            </select>
+
+            <br>
+            <button id="saveBtn" type="submit">Save</button>
+            <button id="resetBtn" type="button">Reset</button>
+            </form>
+
+            <div class="preview">
+            <h2>Preview</h2>
+            <p>ข้อความตัวอย่างนี้จะแสดงผลตามการตั้งค่าของคุณ</p>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
